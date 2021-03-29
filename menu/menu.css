@@ -1,0 +1,245 @@
+    *{
+        background-color: #000;
+        margin: 0;
+    }
+
+    /* 内枠 */
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container .card{
+    position: relative;
+    }
+
+    .container .card .face{
+    width: 160vh;
+    height: 90vh;
+    transition:.4s;
+    border-radius: 1%;
+    }
+
+    .container .card .face.face1{
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    box-shadow:
+        inset 0 0 10px whitesmoke,
+        inset 10px 0 10px rgb(24, 223, 90),
+        inset -10px 0 20px #0ff,
+        inset 10px 0 10px rgb(24, 223, 90),
+        inset 10px 0 50px rgb(197, 221, 253),
+        0 0 50px #fff,
+        -10px 0 80px rgb(24, 223, 90),
+        10px 0 80px rgb(77, 6, 241);  
+    }
+
+    .container .card .face.face1 .content{
+    opacity: .2;
+    transition:  0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    }
+
+    .container .card:hover .face.face1 .content{
+    opacity: 1;
+    }
+
+    /* メニュー */
+
+    .wrap{
+        position:relative;
+        width:80vmin; 
+        height:80vmin;
+        margin:0 auto;
+        background: transparent;
+        transition:transform .5s, opacity .5s;
+        font-size: 25px;
+        transform:scale(0.7) translateZ(0px);
+        opacity:1;
+    }
+    a{
+        position:absolute;
+        left:0; 
+        top:0;
+        width:47.5%; 
+        height:47.5%;
+        overflow:hidden;
+        transform:scale(.3) translateZ(0px);
+        background:#585247;
+        text-decoration: none;
+        line-height: 40vmin;
+        border-radius: 5%;
+        font-family: 'Yusei Magic', sans-serif;
+    }
+
+    .accItemWordColor a{
+        color: #fff;
+        text-shadow:0 0 1px rgb(247, 129, 2),
+                    0 0 2px rgba(247, 129, 2),
+                    0 0 4px rgba(247, 129, 2),
+                    0 0 8px rgba(247, 129, 2),
+                    0 0 16px rgba(247, 129, 2);
+    }
+
+    .chatWordColor a{
+        text-shadow:0 0 1px rgb(183, 4, 243),
+                    0 0 2px rgba(183, 4, 243),
+                    0 0 4px rgba(183, 4, 243),
+                    0 0 8px rgba(183, 4, 243),
+                    0 0 16px rgba(183, 4, 243);
+        color: #fff;
+    }
+
+    a div{
+        height:100%;
+        background-size:cover;
+        opacity:.5;
+        transition:opacity .5s;
+        border-radius:inherit;
+    }
+
+    a:nth-child(1){
+        transform-origin: 110% 110%;
+        transition:transform .4s .15s;
+        line-height: 20vmin;
+    }
+
+    .accItemWordColor a:nth-child(1) div{
+        line-height: 20vmin;
+        background-image:url('https://4.bp.blogspot.com/-nq47CUDCE8w/VuaPoe-itDI/AAAAAAAA408/W1rRvQr1jrMPoPn4GDUsuXQz2uAf3XRSA/s180-c/computer_message_app.png');
+    }
+
+    .chatWordColor a:nth-child(1) div{
+        line-height: 20vmin;
+        background-image:url('https://www.freee.co.jp/kakuteishinkoku/image/2011-kaku_7-3.png');
+    }
+
+    a:nth-child(1) div:hover{
+        
+    }
+
+    a:nth-child(2){
+        left:52.5%;
+        transform-origin: -10% 110%;
+        transition:transform .4s .2s;
+    }
+
+    .chatWordColor a:nth-child(2){
+        pointer-events: none;
+    }
+
+    .accItemWordColor a:nth-child(2) div{
+        line-height: 20vmin;
+        background-image:url('http://3.bp.blogspot.com/-olBaPxDoJL0/VahTtOA-sGI/AAAAAAAAv3U/KkyqU0OCERY/s180-c/money_choubo.png');
+    }
+
+    .chatWordColor a:nth-child(2) div{
+        line-height: 20vmin;
+        background-image:url('http://4.bp.blogspot.com/-daX8n1S0zMI/Vf-eju0WNCI/AAAAAAAAyQg/6yJAgWcyqIg/s180-c/syazai_men.png');
+    }
+
+    a:nth-child(3){
+        top:52.5%;
+        transform-origin: 110% -10%;
+        transition:transform .4s .25s;
+    }
+
+    .accItemWordColor a:nth-child(3){
+        top:52.5%;
+        transform-origin: 110% -10%;
+        transition:transform .4s .25s;
+        pointer-events: none;
+    }
+
+    .chatWordColor a:nth-child(3){
+        pointer-events: none;
+    }
+
+    .accItemWordColor a:nth-child(3) div{
+        line-height: 60vmin;
+    }
+
+    .chatWordColor a:nth-child(3) div{
+        line-height: 60vmin;
+        background-image:url('https://2.bp.blogspot.com/-bqiuiBJ6-kI/XFPNR5sW2BI/AAAAAAABRVw/prZ7kCPe7C0j7b6AulXgp-_kop0acjKrgCLcBGAs/s180-c/hysteric_okoru_man.png');
+    }
+
+    a:nth-child(4){
+        top:52.5%; left:52.5%;
+        transform-origin: -10% -10%;
+        transition:transform .4s .3s;
+    }
+
+    .accItemWordColor a:nth-child(4){
+        pointer-events: none;
+    }
+
+    .chatWordColor a:nth-child(4){
+        pointer-events: none;
+    }
+
+    .accItemWordColor a:nth-child(4) div{
+        line-height: 60vmin;
+        background-image: url('https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880__480.jpg');
+    }
+
+    .chatWordColor a:nth-child(4) div{
+        line-height: 60vmin;
+        background-image:url('');
+    }
+
+    .accItemWordColor a:nth-child(5){
+        width:55%;
+        height:55%;
+        left:22.5%; 
+        top:22.5%;
+        border-radius:50vmin;
+        transform:scale(1);
+        box-shadow: 0 0 5vmin #03e9f4,
+        0 0 2vmin #03e9f4,
+        0 0 3vmin #03e9f4,
+        0 0 4vmin #03e9f4;
+        
+    }
+
+    .chatWordColor a:nth-child(5){
+        width:55%;
+        height:55%;
+        left:22.5%; 
+        top:22.5%;
+        border-radius:50vmin;
+        transform:scale(1);
+        box-shadow: 0 0 5vmin #cae7e9,
+        0 0 2vmin #cae7e9,
+        0 0 3vmin #cae7e9,
+        0 0 4vmin #cae7e9;
+    }
+
+    .accItemWordColor a:nth-child(5) div{
+        background-image: url('https://advisors-freee.jp/article/wp-content/uploads/2019/12/521_M-850x525.jpg');
+    }
+
+    .chatWordColor a:nth-child(5) div{
+        background-image: url('https://www.freee.co.jp/image/chatsupport_window.png');
+    }
+
+    .wrap:hover a{
+        transform:scale(1) translatez(0px);
+    }
+
+    a:hover div{
+        opacity:1;
+        transform:translatez(0px);        
+    }

@@ -1,0 +1,330 @@
+    *{
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow-wrap: break-word;
+        font-family: 'Yusei Magic', sans-serif;
+    }
+
+    .all{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .inputNumCount{
+        font-size: 40px; 
+        color: white; 
+        position: fixed;
+        left: 5%;
+        background: transparent;
+        text-align: center;
+        text-shadow:0 0 1px rgb(22, 255, 10),
+        0 0 2px rgb(6, 228, 32),
+        0 0 4px rgb(18, 223, 35),
+        0 0 8px rgb(72, 239, 6),
+        0 0 16px rgb(18, 225, 7);
+    }
+
+    .timerCount{
+        font-size:40px; 
+        color: white;
+        position: fixed;
+        right: 5%;
+        background: transparent;
+        text-align: center;
+        text-shadow:0 0 1px rgb(230, 230, 10),
+                    0 0 2px rgb(228, 206, 6),
+                    0 0 4px rgb(223, 206, 18),
+                    0 0 8px rgb(239, 216, 6),
+                    0 0 16px rgb(225, 225, 7);
+    }
+
+    .container{
+        display: inline-block;
+        height: 100vh;
+        position: relative;
+        top: 100px;
+        background: #000;
+        }
+
+    .container .card{
+        position: relative;
+    }
+
+    .container .card .face{
+        width: 50vw;
+        height: 180px;
+        transition:.4s;
+    }
+
+    .container .card .face.face1{
+        background: #000;
+        z-index: 1;
+        box-shadow:
+            inset 0 0 10px whitesmoke,
+            inset 10px 0 10px rgb(24, 223, 90),
+            inset -10px 0 20px #0ff,
+            inset 10px 0 10px rgb(24, 223, 90),
+            inset 10px 0 50px rgb(197, 221, 253),
+            0 0 50px #fff,
+            -10px 0 80px rgb(24, 223, 90),
+            10px 0 80px rgb(77, 6, 241);  
+    }
+
+    .container .card .face.face1 .content{
+        position: relative;
+        top: 5%;
+        left: 5%;
+        background-color: transparent;
+        width: 90%;
+        height: 100%;
+        transition:  0.5s;
+        text-align: center;
+    }
+
+    .container .card .face.face1 .content i{
+        font-size: 3em;
+        color: white;
+        display: inline-block;
+    }
+
+    .wrap{
+        text-align: center;
+        background: transparent;
+    }
+
+    #count {
+        position: relative;
+        top: 40px;
+        background: transparent;
+        color: #fff;
+        text-shadow:0 0 1px rgb(230, 230, 10),
+                    0 0 2px rgb(228, 206, 6),
+                    0 0 4px rgb(223, 206, 18),
+                    0 0 8px rgb(239, 216, 6),
+                    0 0 16px rgb(225, 225, 7);
+    }
+
+    #scoredis{
+        font-size: 30px;
+        color: #fff;
+        background: transparent;
+        text-shadow:0 0 1px rgb(250, 0, 175),
+        0 0 2px rgb(250, 0, 175),
+        0 0 4px rgb(250, 0, 175),
+        0 0 8px rgb(250, 0, 175),
+        0 0 16px rgb(250, 0, 175);
+    }
+
+    #inputNum{
+        color: #fff;
+        text-shadow:0 0 1px rgb(22, 255, 10),
+        0 0 2px rgb(6, 228, 32),
+        0 0 4px rgb(18, 223, 35),
+        0 0 8px rgb(72, 239, 6),
+        0 0 16px rgb(18, 225, 7);
+    }
+
+    .balloon {
+        margin-bottom: 2em;
+        position: relative;
+        background: transparent;
+    }
+
+    .balloon:before,.balloon:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    .balloon figure {
+        width: 60px;
+        height: 60px;
+        background: transparent;
+    }
+
+    .balloon-image-left {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .balloon-image-right {
+        float: right;
+        margin-left: 20px;
+    }
+
+    .balloon figure img {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #aaa;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .balloon-image-description {
+        padding: 5px 0 0;
+        font-size: 10px;
+        text-align: center;
+        background: transparent;
+    }
+
+    .balloon-text-right,.balloon-text-left {
+        position: relative;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 2px solid;
+        border-radius: 10px;
+        max-width: -webkit-calc(100% - 120px);
+        max-width: calc(100% - 120px);
+        display: inline-block;
+    }
+
+    .balloon-text-right {
+        border-color: blue;
+    }
+
+    .balloon-text-left {
+        border-color: orange;
+    }
+
+    .balloon-text-right {
+        float: left;
+    }
+
+    .balloon-text-left {
+        float: right;
+    }
+
+    .customerWord{
+        background: transparent;
+        color: #fff;
+        text-shadow:0 0 1px rgb(15, 15, 194),
+        0 0 2px rgb(15, 15, 194),
+        0 0 4px rgb(15, 15, 194),
+        0 0 8px rgb(15, 15, 194),
+        0 0 16px rgb(15, 15, 194);
+    }
+
+    .supportWord{
+        background: transparent;
+        color: #fff;
+        text-shadow:0 0 1px rgb(241, 100, 5),
+        0 0 2px rgb(241, 100, 5),
+        0 0 4px rgb(241, 100, 5),
+        0 0 8px rgb(241, 100, 5),
+        0 0 16px rgb(241, 100, 5);
+    }
+
+    .japaneseSize{
+        font-size: 20px;
+    }
+
+    .wordSize{
+        font-size: 20px;
+    }
+
+    .balloon p:last-child {
+    margin-bottom: 0;
+    }
+
+    /* 三角部分 */
+    .balloon-text-right:before {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent;
+        border-right: 10px solid blue;
+        top: 15px;
+        left: -20px;
+    }
+
+    .balloon-text-right:after {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent;
+        border-right: 10px solid blue;
+        top: 15px;
+        left: -20px;
+    }
+
+    .balloon-text-left:before {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent;
+        border-left: 10px solid orange;
+        top: 15px;
+        right: -20px;
+    }
+
+    .balloon-text-left:after {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent;
+        border-left: 10px solid orange;
+        top: 15px;
+        right: -20px;
+    }
+
+    /* 右からの吹き出しテキスト */
+    .balloon-text-left {
+        background-color: transparent;
+    }
+
+    .balloon-text-left:after {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent;
+        border-left: 10px solid transparent;
+        top: 15px;
+        right: -20px;
+    }
+
+    .ok{
+        color: #fff;
+        text-shadow:0 0 1px rgb(240, 252, 1),
+        0 0 2px rgb(240, 252, 1),
+        0 0 4px rgb(240, 252, 1),
+        0 0 8px rgb(240, 252, 1),
+        0 0 16px rgb(240, 252, 1);
+    }
+
+    .ng{
+        color: #fff;
+        text-shadow:0 0 1px rgb(1, 39, 252),
+        0 0 2px rgb(1, 39, 252),
+        0 0 4px rgb(1, 39, 252),
+        0 0 8px rgb(1, 39, 252),
+        0 0 16px rgb(1, 39, 252);
+    }
+
+    #start_button{
+        color: #000;
+        background-color: #0ff008;
+        box-shadow: 0 0 50px #55f704;
+        border: 0;
+        position: relative;
+        top: 20px;
+        padding: 10px 5px;
+        margin-bottom: 50px;
+    }
+
+    #reset_button{
+        color: #000;
+        background-color: #0ff008;
+        box-shadow: 0 0 50px #55f704;
+        border: 0;
+        position: relative;
+        top: 20px;
+        padding: 10px 5px;
+    }
+
+    .failed{
+        font-size: 15px;
+        color: #fff;
+        text-shadow:0 0 1px rgb(156, 1, 252),
+        0 0 2px rgb(156, 1, 252),
+        0 0 4px rgb(156, 1, 252),
+        0 0 8px rgb(156, 1, 252),
+        0 0 16px rgb(156, 1, 252);
+    }

@@ -1,0 +1,197 @@
+    *{
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        font-family: 'Yusei Magic', sans-serif;
+    }
+
+    /*枠*/
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .container .card{
+    position: relative;
+    }
+
+    .container .card .face{
+    width: 160vh;
+    height: 90vh;
+    transition:.4s;
+    border-radius: 1%;
+    }
+
+    .content{
+        margin: 0 auto;
+    }
+
+    .acItemDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 100px;
+    background: transparent;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    text-shadow:0 0 1px rgb(156, 1, 252),
+    0 0 2px rgb(156, 1, 252),
+    0 0 4px rgb(156, 1, 252),
+    0 0 8px rgb(156, 1, 252),
+    0 0 16px rgb(156, 1, 252);
+    }
+
+    .common1{
+        color: slategray;
+        background-color: #000;
+        width: 25em;
+        height: 25em;
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 25em;
+    }
+
+    .common2{
+        color: slategray;
+        background-color: #000;
+        width: 25em;
+        height: 25em;
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 25em;
+    }
+
+    .common1:hover {
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #0f0;   
+    }
+
+    .common2:hover {
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #0f0;
+    }
+
+    .chatTyping{
+        margin-right: 0;
+    }
+
+    .container .card .face.face1{
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    box-shadow:
+        inset 0 0 10px whitesmoke,
+        inset 10px 0 10px rgb(24, 223, 90),
+        inset -10px 0 20px #0ff,
+        inset 10px 0 10px rgb(24, 223, 90),
+        inset 10px 0 50px rgb(197, 221, 253),
+        0 0 50px #fff,
+        -10px 0 80px rgb(24, 223, 90),
+        10px 0 80px rgb(77, 6, 241);  
+    }
+
+    .container .card .face.face1 .content{
+    opacity: 1;
+    transition:  0.5s;
+    text-align: center;
+    }
+
+    .container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+    }
+
+    /*ボタン*/
+    #start_button{
+    color: #000;
+    background-color: #0ff008;
+    box-shadow: 0 0 50px #55f704;
+    border: 0;
+    position: relative;
+    top: 20px;
+    padding: 15px 30px;
+    }
+
+    #reset_button{
+    color: #000;
+    background-color: #0ff008;
+    box-shadow: 0 0 50px #55f704;
+    border: 0;
+    position: relative;
+    top: 20px;
+    padding: 15px 30px;
+    }
+
+    .wrap{
+    text-align: center;
+    }
+
+    .ok{
+    color: #fff;
+    font-weight: 100;
+    text-transform: initial;
+    text-shadow:0 0 1px rgb(230, 230, 10),
+                0 0 2px rgb(228, 206, 6),
+                0 0 4px rgb(223, 206, 18),
+                0 0 8px rgb(239, 216, 6),
+                0 0 16px rgb(225, 225, 7);
+    }
+
+    .failed{
+    font-size: 15px;
+    color: #fff;
+    text-shadow:0 0 1px rgb(1, 122, 252),
+    0 0 2px rgb(1, 122, 252),
+    0 0 4px rgb(1, 122, 252),
+    0 0 8px rgb(1, 122, 252),
+    0 0 16px rgb(1, 122, 252);
+    }
+
+    .wordColor{
+    color: #fff;
+    font-size: 2em;
+    filter: blur(.6px);
+    font-weight: 100;
+    text-transform: initial;
+    text-shadow:0 0 1px rgb(222, 25, 25),
+                0 0 2px rgb(245, 32, 32),
+                0 0 4px rgb(200, 9, 9),
+                0 0 8px rgb(239, 6, 6),
+                0 0 16px rgb(225, 7, 7);
+    }
+
+    .inputColor{
+    color: #fff;
+    font-size: 1em;
+    filter: blur(.6px);
+    font-weight: 100;
+    text-transform: initial;
+    text-shadow:0 0 1px rgb(222, 25, 25),
+                0 0 2px rgb(245, 32, 32),
+                0 0 4px rgb(200, 9, 9),
+                0 0 8px rgb(239, 6, 6),
+                0 0 16px rgb(225, 7, 7);
+    }
+
+    .test{
+    color: #fff;
+    font-size: 32px;
+    }

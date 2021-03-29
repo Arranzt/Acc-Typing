@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Orbitron&family=Texturina:ital,wght@1,800&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="accItemTyping.css">
+    <script src="acc2questionList.js"></script>
+    <script src="function.js"></script>
+    <title>Acc-typing</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fas fa-torah"></i>
+                    <div class="acItemDetail" id="acItemDetail"></div>
+                    <div class="wrap">
+                        <div id="count" style="color: #fff; 
+                        text-shadow:0 0 1px rgb(230, 230, 10),
+                        0 0 2px rgb(228, 206, 6),
+                        0 0 4px rgb(223, 206, 18),
+                        0 0 8px rgb(239, 216, 6),
+                        0 0 16px rgb(225, 225, 7);"></div>
+                        <div id="inputNum" style="color: #fff;
+                        text-shadow:0 0 1px rgb(22, 255, 10),
+                        0 0 2px rgb(6, 228, 32),
+                        0 0 4px rgb(18, 223, 35),
+                        0 0 8px rgb(72, 239, 6),
+                        0 0 16px rgb(18, 225, 7);"></div>
+                        <h1><div id="japanese" class="wordColor"></div></h1>
+                        <span id="checker"></span>
+                        <h2><div id="word" class="inputColor"></div></h2>
+                        <div id="scoredis" class="test" style="color: #fff;
+                        text-shadow:0 0 1px rgb(22, 255, 10),
+                        0 0 2px rgb(6, 228, 32),
+                        0 0 4px rgb(18, 223, 35),
+                        0 0 8px rgb(72, 239, 6),
+                        0 0 16px rgb(18, 225, 7);"></div>
+                        <input type="button" id="reset_button" value="もう一度" onclick="ready()">
+                        <input type="button" id="start_button" value="モード変更" onclick="location.href='../menu/menu.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
